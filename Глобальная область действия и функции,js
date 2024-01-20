@@ -1,0 +1,29 @@
+; В JavaScript область видимости означает видимость переменных. Переменные, определенные вне функционального блока, имеют глобальную область действия. Это означает, что их можно увидеть повсюду в вашем коде JavaScript.
+
+; Переменные, объявленные без ключевых слов letили, constавтоматически создаются в globalобласти видимости. Это может привести к непредвиденным последствиям в другом месте вашего кода или при повторном запуске функции. Вы всегда должны объявлять свои переменные с помощью letили const.
+
+; Используя letили const, объявите глобальную переменную, названную myGlobalвне какой-либо функции. Инициализируйте его со значением 10.
+
+; Внутри функции fun1назначьте 5ее oopsGlobal без использования ключевых слов varили .letconst
+
+// Declare the myGlobal variable below this line
+
+let myGlobal=10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+oopsGlobal=5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
