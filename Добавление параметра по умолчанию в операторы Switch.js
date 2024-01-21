@@ -38,8 +38,6 @@ function switchOfStuff(val) {
         default:
         answer = "stuff";
     }
-  
-  
     // Only change code above this line
     return answer;
   }
